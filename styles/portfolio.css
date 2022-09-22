@@ -172,14 +172,36 @@ color:var(--primary-whyte-color);
 
 .dodatok{
     height: 404px;
-    width: 370px;
-    
+    width: 370px; 
+}
+.dodatok-list:hover .overlay,
+.dodatok-list:focus .overlay{
+    transform: translateY(0%);
 }
 .dodatok-list{ text-decoration: none;
 display: block;}
-.txt{
-    text-decoration: none;
+.overlay{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 28px;
+text-align: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(33, 150, 243, 0.9);
+    color: var(--primary-whyte-color);
+    padding: 24px;
+    letter-spacing: 0.03em;
+    overflow: auto;
+    transform: translateY(100%);
+    transition: transform 200ms linear;
 }
+.dodatok-list-img-wrapper{position: relative;
+overflow: hidden;}
 
 .box{
     padding: 20px 24px;
