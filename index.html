@@ -36,7 +36,7 @@
     <main class="text-main  ">
       <section class="decision">
         <h1 class="title">Ефективні рішення для вашого бізнесу </h1>
-        <button class="model-open-btn" type="button">Замовити послугу</button>
+        <button class="model-open-btn" type="button" data-modal-open>Замовити послугу</button>
       </section>
    
 
@@ -349,7 +349,16 @@
     </div>
   </div>
   </footer>
-
+<div class="dackdrop is-hidden" data-modal>
+  <div class="modal">
+    <button type="button" class="modal-close-btn" data-modal-close>
+      <svg class="model-close-icom" width="18" height="18" > 
+        <use href="./img/symbol.svg#icon-close"></use>       
+      </svg>
+    </button>
+  </div>
+</div>
+<script src="./js/modal.js"></script>
 </body>
 </html>
 
