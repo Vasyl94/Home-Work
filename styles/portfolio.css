@@ -96,7 +96,7 @@ align-items: center;
 color: var(--accent-color);
 }
 .menu-link-number{
-    color: var(--accent-color);
+color: var(--accent-color);
 }
 .menu-link{
 font-weight: 500;
@@ -106,7 +106,18 @@ padding-top: 32px;
 padding-bottom: 32px;
 display: inline-block;
 color: var(--primary-gray-color);
+position: relative;
 }
+.menu-link-number::after{
+    position: absolute;
+    display: block;
+    content: "";
+    width: 100%;
+    height: 4px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--accent-color);
+    }
 .contact-mail-numbre,
 .contact-phone-numbre
 {
@@ -185,15 +196,14 @@ display: block;}
 font-style: normal;
 font-weight: 400;
 font-size: 18px;
-line-height: 28px;
+line-height: 1.55;
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
     height: 100%;
     background: rgba(33, 150, 243, 0.9);
     color: var(--primary-whyte-color);
-    padding: 24px;
+    padding: 63px 24px;
     letter-spacing: 0.03em;
     overflow: auto;
     transform: translateY(100%);
