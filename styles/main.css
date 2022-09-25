@@ -143,10 +143,14 @@ align-items: center;
 .menu-link :focus
 {color: var(--accent-color);}
 
-.contact-mail-numbre-icon,
+.contact-mail-numbre-icon{
+    margin-right:10px ;
+    width: 16px;
+    height: 12px;
+}
 .contact-mail-phone-icon{
-width: 16px;
-height: 12px;
+width: 10px;
+height: 16px;
 margin-right:10px ;
 } 
 
@@ -265,6 +269,7 @@ margin-bottom: 30px;
 
            /*----TECHNOLOGIES----*/
 
+.devices{ position: relative;}
  .technologies{
     background-color: var(--primary-whyte-color);
     padding-top: 0px;
@@ -279,9 +284,26 @@ margin-bottom: 30px;
     color: var(--primary-gray-color);
     margin-bottom: 50px
      }
-     .foto-page{
+.foto-page{
     gap: 30px;
     display: flex;
+ }
+ .about-img-overlay-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 70px;
+    background-color: rgba(47, 48, 58, 0.8);
+    color: var(--primary-whyte-color);
+    font-weight: var(--primry-font-weight);
+    font-size: var(--primary-font-size);
+    line-height: 1.14;
+    text-align: center;
+    text-transform: uppercase;
  }
    
             /*----TECHNOLOGIES----*/
@@ -497,8 +519,7 @@ margin-bottom: 20px;}
     background: rgba(47, 48, 58, 0.4);
 
     opacity: 1;
-    visibility: hidden;
-    pointer-events: none;
+    
     transition: opacity 500ms ease, visibility 500ms ease;
 }
 .dackdrop.is-hidden{
