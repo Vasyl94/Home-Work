@@ -341,9 +341,11 @@ margin-bottom: 20px;}
     column-gap: 10px;
     margin-bottom: 30px; }
 
-    .contact-mail:hover,
-.contact-phone:hover
-{ fill: var(--accent-color);}
+.contact-mail:hover,
+.contact-phone:hover,
+.contact-mail:focus,
+.contact-phone:focus
+{ color: var(--accent-color);}
             
                      /*---FOOTER---*/
             

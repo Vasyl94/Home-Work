@@ -509,8 +509,12 @@ justify-content: flex-start;
 margin-bottom: 20px;}
 
 .contact-mail:hover,
-.contact-phone:hover
-{ fill: var(--accent-color);}
+.contact-mail:focus
+{ color: var(--accent-color);}
+.contact-phone:hover,
+.contact-phone:focus{
+    color: var(--accent-color);
+}
 
 
          /*---FOOTER---*/
