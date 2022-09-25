@@ -508,6 +508,11 @@ display: flex;
 justify-content: flex-start;
 margin-bottom: 20px;}
 
+.contact-mail:hover,
+.contact-phone:hover
+{ fill: var(--accent-color);}
+
+
          /*---FOOTER---*/
 .dackdrop{
     position: fixed;
@@ -517,9 +522,7 @@ margin-bottom: 20px;}
     width: 100%;
     height: 100%;
     background: rgba(47, 48, 58, 0.4);
-
     opacity: 1;
-    
     transition: opacity 500ms ease, visibility 500ms ease;
 }
 .dackdrop.is-hidden{
