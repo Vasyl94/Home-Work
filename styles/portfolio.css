@@ -95,6 +95,11 @@ align-items: center;
 .index.html{
 color: var(--accent-color);
 }
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
+
 .link.menu-link-number{color: var(--accent-color);}
 .menu-link-number{
 position: relative;
@@ -156,9 +161,15 @@ margin-right:10px ;
 .menu-link:hover,
 .menu-link :focus
 {color: var(--accent-color);}
+
 .contact-mail-numbre:hover  .contact-mail-numbre-icon,
 .contact-phone-numbre:hover .contact-mail-phone-icon
 { fill: var(--accent-color);}
+.contact-mail-numbre:focus  .contact-mail-numbre-icon,
+.contact-phone-numbre:focus .contact-mail-phone-icon
+{ fill: var(--accent-color);}
+
+
 
 .decision{ background-color: var(--primary-link-color);}
 

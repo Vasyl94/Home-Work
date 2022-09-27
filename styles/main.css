@@ -154,8 +154,16 @@ height: 16px;
 margin-right:10px ;
 } 
 
+
+.menu-link:hover,
+.menu-link:focus {
+  color: var(--accent-color);
+}
 .contact-mail-numbre:hover  .contact-mail-numbre-icon,
 .contact-phone-numbre:hover .contact-mail-phone-icon
+{ fill: var(--accent-color);}
+.contact-mail-numbre:focus  .contact-mail-numbre-icon,
+.contact-phone-numbre:focus .contact-mail-phone-icon
 { fill: var(--accent-color);}
 
                /*----Header---*/
