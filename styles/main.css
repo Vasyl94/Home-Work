@@ -1,6 +1,9 @@
 :root{
     --primary-font:'Roboto', sans-serif ;
     --second-font: 'Raleway' , sans-serif ;
+    --primry-font-weight: 700;
+    --secondary-font-weight: 400;
+    --primary-font-size: 14px;
     --accent-rest-color: #188CE8;
     --accent-color: #2196F3;
     --primary-whyte-color: #FFFFFF;
@@ -133,6 +136,7 @@ letter-spacing: 0.02em;
 color: var(--primary-text-color);
 display: flex;
 align-items: center;
+transition: var(--primary-bottom-color);
 }
 
 .contact-mail-numbre:hover,
@@ -147,13 +151,18 @@ align-items: center;
     margin-right:10px ;
     width: 16px;
     height: 12px;
+    fill: var(--primary-text-color);
 }
 .contact-mail-phone-icon{
 width: 10px;
 height: 16px;
 margin-right:10px ;
+fill: var(--primary-text-color);
 } 
-
+.contacts-icon-email,
+.contacts-icon-tell {
+  fill: var(--secondary-color);
+}
 
 .menu-link:hover,
 .menu-link:focus {
@@ -429,6 +438,7 @@ height: 60px;
     align-items: center;
     justify-content: center;
     fill: #AFB1B8;
+    transition: var(--transition-dur-and-func);
 }
 .cursor:focus,
 .cursor:hover
