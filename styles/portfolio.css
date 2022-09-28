@@ -7,6 +7,7 @@
     --primary-gray-color: #212121;
     --primary-link-color: #2F303A;
     --primary-text-color: #757575;
+    --icon-color: #AFB1B8;
     --primary-fon-color: #F5F5F5;
     --primary-fon2-color:#F5F4FA;
     --primary-bottom-color: rgba(255, 255, 255, 0.6);
@@ -233,7 +234,8 @@ color:var(--primary-whyte-color);
 }
 .dodatok-list{ text-decoration: none;
 display: block;
-transition: var(--transition-time-cubic);}
+transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
 .overlay{
 font-family: 'Roboto';
 font-style: normal;
@@ -250,7 +252,7 @@ line-height: 1.55;
     letter-spacing: 0.03em;
     overflow: auto;
     transform: translateY(100%);
-    transition: var(--transition-time-cubic);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .dodatok-list-img-wrapper{position: relative;
 overflow: hidden;}
